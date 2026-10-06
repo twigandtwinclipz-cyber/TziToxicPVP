@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#11130f">
-    <meta name="description" content="Enter TziToxicPVP: a Minecraft PvP server built for players who come to fight.">
-    <title>TziToxicPVP — Enter the arena</title>
+    <meta name="description" content="Enter TziToxicPVP: a Minecraft PvP server built for players who come to fight." data-i18n-attr="content:page.description">
+    <title data-i18n="page.title">TziToxicPVP — Enter the arena</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -15,84 +15,93 @@
   <body>
     <div class="site-shell">
       <header class="site-header">
-        <a class="wordmark" href="#home" aria-label="TziToxicPVP home">
+        <a class="wordmark" href="#home" aria-label="TziToxicPVP home" data-i18n-attr="aria-label:nav.home">
           <span class="wordmark-icon" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
           <span>TZI<span class="wordmark-accent">TOXIC</span><small>PVP NETWORK</small></span>
         </a>
-        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation">
-          <span></span><span></span><span class="sr-only">Toggle navigation</span>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" aria-label="Toggle navigation" data-i18n-attr="aria-label:nav.toggle">
+          <span></span><span></span><span class="sr-only" data-i18n="nav.toggle">Toggle navigation</span>
         </button>
-        <nav class="site-nav" id="site-navigation" aria-label="Main navigation">
-          <a href="#about">The server</a>
-          <a href="#how-to-join">How to join</a>
-          <a href="#faq">FAQ</a>
-          <button class="button button-small button-outline" type="button" data-open-auth>Player login <span aria-hidden="true">↗</span></button>
+        <nav class="site-nav" id="site-navigation" aria-label="Main navigation" data-i18n-attr="aria-label:nav.label">
+          <a href="#about" data-i18n="nav.server">The server</a>
+          <a href="#how-to-join" data-i18n="nav.join">How to join</a>
+          <a href="#faq" data-i18n="nav.faq">FAQ</a>
+          <label class="language-picker">
+            <span class="sr-only" data-i18n="language.label">Choose language</span>
+            <select id="language-select" aria-label="Choose language" data-i18n-attr="aria-label:language.label">
+              <option value="en">English</option>
+              <option value="fr">Français</option>
+              <option value="es">Español</option>
+              <option value="de">Deutsch</option>
+            </select>
+          </label>
+          <button class="button button-small button-outline" type="button" data-open-auth><span data-i18n="nav.login">Player login</span> <span aria-hidden="true">↗</span></button>
         </nav>
       </header>
 
       <main>
         <section class="hero" id="home">
           <div class="hero-copy">
-            <div class="eyebrow"><span class="live-dot"></span> YOUR NEXT FIGHT STARTS HERE</div>
-            <h1>BUILT TO<br>FIGHT<span class="heading-period">.</span><br><span class="heading-outline">MADE TO WIN.</span></h1>
-            <p class="hero-description">Sharpen your aim. Trust your instincts. Step into the arena and make every hit count.</p>
+            <div class="eyebrow"><span class="live-dot"></span> <span data-i18n="hero.kicker">YOUR NEXT FIGHT STARTS HERE</span></div>
+            <h1 data-i18n-html="hero.title">BUILT TO<br>FIGHT<span class="heading-period">.</span><br><span class="heading-outline">MADE TO WIN.</span></h1>
+            <p class="hero-description" data-i18n="hero.description">Sharpen your aim. Trust your instincts. Step into the arena and make every hit count.</p>
             <div class="hero-actions">
-              <a class="button button-primary" href="#how-to-join">ENTER THE ARENA <span aria-hidden="true">→</span></a>
-              <button class="button button-quiet" type="button" data-open-auth>PLAYER LOGIN <span aria-hidden="true">↗</span></button>
+              <a class="button button-primary" href="#how-to-join"><span data-i18n="hero.cta">ENTER THE ARENA</span> <span aria-hidden="true">→</span></a>
+              <button class="button button-quiet" type="button" data-open-auth><span data-i18n="hero.login">PLAYER LOGIN</span> <span aria-hidden="true">↗</span></button>
             </div>
-            <div class="hero-note"><span class="note-line"></span> NO SHORTCUTS. JUST SKILL.</div>
+            <div class="hero-note"><span class="note-line"></span> <span data-i18n="hero.note">NO SHORTCUTS. JUST SKILL.</span></div>
           </div>
 
-          <div class="arena-art" aria-label="Illustration of a Minecraft-style PvP arena" role="img">
+          <div class="arena-art" aria-label="Illustration of a Minecraft-style PvP arena" data-i18n-attr="aria-label:hero.artLabel" role="img">
             <div class="art-sun"></div>
             <div class="art-grid"></div>
-            <div class="art-label"><span>COMBAT MODE</span><strong>ON</strong></div>
+            <div class="art-label"><span data-i18n="hero.combat">COMBAT MODE</span><strong data-i18n="hero.on">ON</strong></div>
             <div class="block block-back"></div>
             <div class="block block-left"></div>
             <div class="block block-right"></div>
             <div class="block block-platform"></div>
             <div class="pixel-sword" aria-hidden="true"><i></i><b></b><em></em></div>
-            <div class="art-coordinate">ARENA_01 <span>//</span> READY</div>
+            <div class="art-coordinate"><span data-i18n="hero.arena">ARENA_01</span> <span>//</span> <span data-i18n="hero.ready">READY</span></div>
             <div class="art-corner art-corner-top"></div>
             <div class="art-corner art-corner-bottom"></div>
           </div>
           <div class="hero-index" aria-hidden="true">01 <span>/</span> 03</div>
         </section>
 
-        <section class="ticker" aria-label="Server motto">
+        <section class="ticker" aria-label="Server motto" data-i18n-attr="aria-label:ticker.label">
           <div class="ticker-track">
-            <span>FIGHT SMART</span><b>✳</b><span>TziToxicPVP</span><b>✳</b><span>CLAIM YOUR WIN</span><b>✳</b>
-            <span>FIGHT SMART</span><b>✳</b><span>TziToxicPVP</span><b>✳</b><span>CLAIM YOUR WIN</span><b>✳</b>
+            <span data-i18n="ticker.smart">FIGHT SMART</span><b>✳</b><span>TziToxicPVP</span><b>✳</b><span data-i18n="ticker.win">CLAIM YOUR WIN</span><b>✳</b>
+            <span data-i18n="ticker.smart">FIGHT SMART</span><b>✳</b><span>TziToxicPVP</span><b>✳</b><span data-i18n="ticker.win">CLAIM YOUR WIN</span><b>✳</b>
           </div>
         </section>
 
         <section class="intro section-wrap" id="about">
-          <div class="section-kicker"><span>01</span> / THE SERVER</div>
+          <div class="section-kicker"><span>01</span> / <span data-i18n="about.kicker">THE SERVER</span></div>
           <div class="intro-content">
-            <h2>THIS ISN'T A<br><span>SAFE ZONE.</span></h2>
+            <h2 data-i18n-html="about.title">THIS ISN'T A<br><span>SAFE ZONE.</span></h2>
             <div class="intro-aside">
-              <p>TziToxicPVP is a Minecraft PvP server for players who'd rather prove it in the arena. Load in, find your fight, and leave your mark.</p>
-              <a class="text-link" href="#how-to-join">FIND YOUR WAY IN <span aria-hidden="true">↘</span></a>
+              <p data-i18n="about.description">TziToxicPVP is a Minecraft PvP server for players who'd rather prove it in the arena. Load in, find your fight, and leave your mark.</p>
+              <a class="text-link" href="#how-to-join"><span data-i18n="about.link">FIND YOUR WAY IN</span> <span aria-hidden="true">↘</span></a>
             </div>
           </div>
           <div class="feature-grid">
             <article class="feature-card">
               <span class="feature-number">01</span>
               <span class="feature-icon" aria-hidden="true">⌁</span>
-              <h3>PURE PVP</h3>
-              <p>Read the fight. Make your move. Earn every win.</p>
+              <h3 data-i18n="feature.one.title">PURE PVP</h3>
+              <p data-i18n="feature.one.description">Read the fight. Make your move. Earn every win.</p>
             </article>
             <article class="feature-card">
               <span class="feature-number">02</span>
               <span class="feature-icon" aria-hidden="true">✳</span>
-              <h3>YOUR MOMENT</h3>
-              <p>Step into the arena and make a name for yourself.</p>
+              <h3 data-i18n="feature.two.title">YOUR MOMENT</h3>
+              <p data-i18n="feature.two.description">Step into the arena and make a name for yourself.</p>
             </article>
             <article class="feature-card">
               <span class="feature-number">03</span>
               <span class="feature-icon" aria-hidden="true">↗</span>
-              <h3>YOUR PEOPLE</h3>
-              <p>Meet other players and find your next challenge.</p>
+              <h3 data-i18n="feature.three.title">YOUR PEOPLE</h3>
+              <p data-i18n="feature.three.description">Meet other players and find your next challenge.</p>
             </article>
           </div>
         </section>
@@ -100,35 +109,35 @@
         <section class="join-section" id="how-to-join">
           <div class="join-inner section-wrap">
             <div>
-              <div class="section-kicker"><span>02</span> / GET IN THE GAME</div>
-              <h2>READY WHEN<br><span>YOU ARE.</span></h2>
+              <div class="section-kicker"><span>02</span> / <span data-i18n="join.kicker">GET IN THE GAME</span></div>
+              <h2 data-i18n-html="join.title">READY WHEN<br><span>YOU ARE.</span></h2>
             </div>
             <div class="join-card">
-              <div class="join-status"><span class="status-mark">↗</span><span>SERVER ADDRESS</span><span class="status-badge">JAVA · FABRIC 26.2</span></div>
-              <p>Connect with Minecraft Java Edition using Fabric 26.2.</p>
+              <div class="join-status"><span class="status-mark">↗</span><span data-i18n="join.address">SERVER ADDRESS</span><span class="status-badge">JAVA · FABRIC 26.2</span></div>
+              <p data-i18n="join.description">Connect with Minecraft Java Edition using Fabric 26.2.</p>
               <div class="server-address"><code>TziToxicPVP.mc.gg</code></div>
-              <button class="button button-primary join-button" type="button" data-open-auth>MAKE A PLAYER PROFILE <span aria-hidden="true">→</span></button>
-              <span class="join-footnote">Join with Fabric 26.2 · Java Edition</span>
+              <button class="button button-primary join-button" type="button" data-open-auth><span data-i18n="join.profile">MAKE A PLAYER PROFILE</span> <span aria-hidden="true">→</span></button>
+              <span class="join-footnote" data-i18n="join.footnote">Join with Fabric 26.2 · Java Edition</span>
             </div>
           </div>
         </section>
 
         <section class="faq section-wrap" id="faq">
-          <div class="section-kicker"><span>03</span> / QUICK ANSWERS</div>
+          <div class="section-kicker"><span>03</span> / <span data-i18n="faq.kicker">QUICK ANSWERS</span></div>
           <div class="faq-layout">
-            <h2>BEFORE<br>YOU <span>QUEUE.</span></h2>
+            <h2 data-i18n-html="faq.title">BEFORE<br>YOU <span>QUEUE.</span></h2>
             <div class="faq-list">
               <details>
-                <summary>What is TziToxicPVP? <span aria-hidden="true">+</span></summary>
-                <p>TziToxicPVP is a Minecraft server focused on player-versus-player combat. More server details will be shared here soon.</p>
+                <summary><span data-i18n="faq.one.question">What is TziToxicPVP?</span> <span aria-hidden="true">+</span></summary>
+                <p data-i18n="faq.one.answer">TziToxicPVP is a Minecraft server focused on player-versus-player combat. More server details will be shared here soon.</p>
               </details>
               <details>
-                <summary>How do I join the server? <span aria-hidden="true">+</span></summary>
-                <p>Use Fabric 26.2 and type "TziToxicPVP.mc.gg"!</p>
+                <summary><span data-i18n="faq.two.question">How do I join the server?</span> <span aria-hidden="true">+</span></summary>
+                <p data-i18n="faq.two.answer">Use Fabric 26.2 and type "TziToxicPVP.mc.gg"!</p>
               </details>
               <details>
-                <summary>What is the player login for? <span aria-hidden="true">+</span></summary>
-                <p>The profile form on this preview is for trying the website interface. It does not create a real account or authenticate you with a Minecraft server.</p>
+                <summary><span data-i18n="faq.three.question">What is the player login for?</span> <span aria-hidden="true">+</span></summary>
+                <p data-i18n="faq.three.answer">The profile form on this preview is for trying the website interface. It does not create a real account or authenticate you with a Minecraft server.</p>
               </details>
             </div>
           </div>
@@ -140,32 +149,32 @@
           <span class="wordmark-icon" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
           <span>TZI<span class="wordmark-accent">TOXIC</span><small>PVP NETWORK</small></span>
         </a>
-        <span class="footer-copy">NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT.</span>
-        <a class="back-top" href="#home">BACK TO TOP ↑</a>
+        <span class="footer-copy" data-i18n="footer.disclaimer">NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT.</span>
+        <a class="back-top" href="#home" data-i18n="footer.top">BACK TO TOP ↑</a>
       </footer>
     </div>
 
     <dialog class="auth-dialog" aria-labelledby="auth-title">
-      <button class="dialog-close" type="button" aria-label="Close login dialog">×</button>
-      <div class="auth-mark"><span class="wordmark-icon" aria-hidden="true"><span></span><span></span><span></span><span></span></span> PLAYER ACCESS</div>
+      <button class="dialog-close" type="button" aria-label="Close login dialog" data-i18n-attr="aria-label:auth.close">×</button>
+      <div class="auth-mark"><span class="wordmark-icon" aria-hidden="true"><span></span><span></span><span></span><span></span></span> <span data-i18n="auth.access">PLAYER ACCESS</span></div>
       <h2 id="auth-title">YOUR NEXT<br><span>MOVE.</span></h2>
-      <div class="auth-tabs" role="tablist" aria-label="Account access">
-        <button type="button" role="tab" id="login-tab" aria-selected="true" aria-controls="auth-panel" data-auth-mode="login">LOG IN</button>
-        <button type="button" role="tab" id="signup-tab" aria-selected="false" aria-controls="auth-panel" data-auth-mode="signup">SIGN UP</button>
+      <div class="auth-tabs" role="tablist" aria-label="Account access" data-i18n-attr="aria-label:auth.tabs">
+        <button type="button" role="tab" id="login-tab" aria-selected="true" aria-controls="auth-form" data-auth-mode="login" data-i18n="auth.login">LOG IN</button>
+        <button type="button" role="tab" id="signup-tab" aria-selected="false" aria-controls="auth-form" data-auth-mode="signup" data-i18n="auth.signup">SIGN UP</button>
       </div>
-      <form id="auth-form" aria-labelledby="login-tab">
-        <label for="player-name">MINECRAFT USERNAME</label>
-        <input id="player-name" name="username" type="text" minlength="3" maxlength="16" pattern="[A-Za-z0-9_]{3,16}" autocomplete="username" placeholder="Your in-game name" required>
-        <label for="player-password">PASSWORD</label>
-        <input id="player-password" name="password" type="password" minlength="8" autocomplete="current-password" placeholder="At least 8 characters" required>
-        <p class="auth-notice">Website preview only. GitHub Pages cannot securely create accounts; connect an authentication provider before using real credentials.</p>
+      <form id="auth-form" role="tabpanel" aria-labelledby="login-tab">
+        <label for="player-name" data-i18n="auth.username">MINECRAFT USERNAME</label>
+        <input id="player-name" name="username" type="text" minlength="3" maxlength="16" pattern="[A-Za-z0-9_]{3,16}" autocomplete="username" placeholder="Your in-game name" data-i18n-attr="placeholder:auth.usernamePlaceholder" required>
+        <label for="player-password" data-i18n="auth.password">PASSWORD</label>
+        <input id="player-password" name="password" type="password" minlength="8" autocomplete="current-password" placeholder="At least 8 characters" data-i18n-attr="placeholder:auth.passwordPlaceholder" required>
+        <p class="auth-notice" data-i18n="auth.notice">Website preview only. GitHub Pages cannot securely create accounts; connect an authentication provider before using real credentials.</p>
         <p class="auth-feedback" id="auth-feedback" aria-live="polite"></p>
         <button class="button button-primary auth-submit" type="submit" id="auth-submit">LOG IN <span aria-hidden="true">→</span></button>
       </form>
       <div class="signed-in" hidden>
-        <p>You are viewing the site as <strong class="signed-in-name"></strong>.</p>
-        <p class="auth-notice">This is a temporary preview session only. No password was saved or checked.</p>
-        <button class="button button-outline auth-logout" type="button">LOG OUT</button>
+        <p><span data-i18n="auth.previewAs">You are viewing the site as</span> <strong class="signed-in-name"></strong>.</p>
+        <p class="auth-notice" data-i18n="auth.previewNotice">This is a temporary preview session only. No password was saved or checked.</p>
+        <button class="button button-outline auth-logout" type="button" data-i18n="auth.logout">LOG OUT</button>
       </div>
     </dialog>
   </body>
